@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .btn {
+    @apply bg-blue-950 text-white uppercase px-12 py-5 mr-auto my-3 
+    rounded font-semibold hover:bg-blue-900 hover:transition-colors;
+  }
+}

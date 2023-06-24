@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"  class="dark scroll-smooth transition-colors">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="font-custom">
+   <div class="container mx-auto relative">
+    <header class="flex justify-between my-5 mt-4 px-3 ">
+      <div class="">
+        <img class="" src="./assets/images/logo.svg" />
+      </div>
+      <nav class="nav absolute sm:relative bg-slate-50 h-screen sm:h-0 bg-opacity-95 left-0 top-0 translate-x-24 sm:translate-x-0 sm:flex w-3/4 sm:w-auto transition-all ease-in duration-1000 hidden">
+        <ul class="flex w-full h-full flex-col py-3 sm:flex-row sm:w-auto justify-center  items-center sm:items-start gap-5 list-none">
+          <li class="ml-0 sm:ml-8 text-center"><a class=" text-gray-400 font-semibold cursor-pointer hover:text-red-300 hover:transition-colors" href="#home">Home</a></li>
+          <li class="ml-o sm:ml-8 text-center"><a class=" text-gray-400 font-semibold cursor-pointer hover:text-red-300 hover:transition-colors" href="#new">New</a></li>
+          <li class="ml-o sm:ml-8 text-center"><a class=" text-gray-400 font-semibold cursor-pointer hover:text-red-300 hover:transition-colors" href="#popular">Popular</a></li>
+          <li class="ml-o sm:ml-8 text-center"><a class=" text-gray-400 font-semibold cursor-pointer hover:text-red-300 hover:transition-colors" href="#trending">Trending</a></li>
+          <li class="ml-o sm:ml-8 text-center"><a class=" text-gray-400 font-semibold cursor-pointer hover:text-red-300 hover:transition-colors" href="#categories">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="btn_mobile_menu z-10 basis-1/2 cursor-pointer justify-end flex sm:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="menu_open w-10 h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="menu_close w-10 h-10 hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+          
+      </div>
+    </header>
+
+    <!-- HERO Section -->
+    <main class="main">
+      <section class="container py-4 px-3 mb-5 mx-auto flex flex-col sm:flex-row gap-4 sm:gap-6">
+        <div class="top-section grid grid-rows-2 sm:grid-cols-2 sm:gap-6">
+          <img class="hero_image col-span-2" src="./assets/images/image-web-3-desktop.jpg" />
+        <!-- <img class="hidden" src="./assets/images/image-web-3-mobile.jpg" /> -->
+        <p class="font-bold self-center sm:self-start text-5xl sm:text-7xl text-blue-950">The Bright Future of Web 3.0?</p>
+
+        <div class="">
+          <p class="text-gray-400 mb-5 font-semibold">We dive into the next evolution of the web that claims to put 
+            the power of the platforms back into the hands of the people. But is 
+            it really fulfilling its promise? </p>
+            <button class="btn">Read more</button>
+        </div>
+        
+      </div>
+      <!-- Side view New Section -->
+      <div class="bg-blue-950 mx-auto py-4 px-6" id="new">
+        <h3 class="font-semibold text-orange-400 text-2xl" >New</h3>
+        <div class="grid grid-rows-3 gap-4">
+          <div class="my-4 border-solid border-gray-400 border-b">
+            <p class="font-semibold text-white">Hydrogen VS Electric Cars</p>
+            <p class="text-gray-400 pb-6 pt-2 ">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="my-4 border-solid border-gray-400 border-b">
+            <p class="font-semibold text-white"> The Downsides of AI Artistry</p>
+            <p class="text-gray-400 pb-6 pt-2"> What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <div class="my-4 border-none">
+            <p class="font-semibold text-white">Is VC Funding Drying Up?</p>
+            <p class="text-gray-400 pb-6 pt-2 ">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- TRENDS -->
+    <section class="my-3" id="trending">
+      <div class="grid grid-rows-3 gap-4 sm:grid-cols-3 sm:grid-rows-none">
+        <div class="grid grid-cols-2 gap-5 px-4">
+          <img src="./assets/images/image-retro-pcs.jpg"/>
+          <div class="flex flex-col">
+            <p class="font-bold text-4xl text-gray-500 my-2 mb-8">01</p>
+            <p class="font-bold text-base">Reviving Retro PCs</p>
+            <p class="text-base text-gray-400 mt-auto">What happens when old PCs are given modern upgrades?</p>
+
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-5 px-4">
+          <img src="./assets/images/image-top-laptops.jpg"/>
+          <div class="flex flex-col ">
+            <p class="font-bold text-4xl text-gray-500 my-2 mb-8">02</p>
+            <p class="font-bold text-base">Top 10 Laptops of 2022 </p>
+            <p class="text-base text-gray-400 mt-auto">Our best picks for various needs and budgets.</p>
+
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-5 px-4">
+          <img src="./assets/images/image-gaming-growth.jpg"/>
+          <div class="flex flex-col ">
+            <p class="font-bold text-4xl text-gray-500 my-2 mb-8">03</p>
+            <p class="font-bold text-base">The Growth of Gaming </p>
+            <p class="text-base text-gray-400 mt-auto">How the pandemic has sparked fresh opportunities.</p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-indigo-300 py-4">
+      <div class="container mx-auto px-4 sm:px-0 text-center">
+        <p class="text-white"> Copyright 2023. All Rights Reserved by <span class="underline font-semibold text-indigo-600">W</span></p>
+      </div>
+    </footer>
+    
+  </main>
+   </div>
+</html>
